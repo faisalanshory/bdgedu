@@ -124,4 +124,4 @@ for (var i = 0; i < states.length; i++) {
   output.features.push(createState(state));
 }
 
-fs.writeFileSync(__dirname + '/../public/data/states.geojson', JSON.stringify(output,null,2));
+fs.writeFileSync(__dirname + '/../pubs/data/states.geojson', JSON.stringify(output,null,2));
