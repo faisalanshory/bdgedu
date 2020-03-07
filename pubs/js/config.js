@@ -14,6 +14,6 @@ var config = {
       "zoom": 12 
     },
   ],
-  "states_url":"./public/data/states.geojson",
-  "stats_url":"./public/data/stats.json"
+  "states_url":"./pubs/data/states.geojson",
+  "stats_url":"./pubs/data/stats.json"
 };
