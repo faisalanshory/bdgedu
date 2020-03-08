@@ -1,5 +1,5 @@
 var config = {
-  "title":"Kota Bandung",
+  "title":"EQUIPOTS",
   "key":"16235db299c64efcab3843584fbac419",
   "min_zoom": 5,
   "home":{
