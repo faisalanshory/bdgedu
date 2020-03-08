@@ -39,16 +39,17 @@ function add_states(data){
   var esri_topo = L.tileLayer( 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
 			maxZoom: 18,
 			attribution: 'Tiles © <a href="https://services.arcgisonline.com/ArcGIS/' + 'rest/services/World_Topo_Map/MapServer">ArcGIS</a>'
-    });
+    }).addTo(map);
   var satellite = L.tileLayer( 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 			maxZoom: 18,
 			attribution: 'Copyright:© 2013 <a href="https://www.esri.com">ESRI</a>, i-cubed, GeoEyeESRI'
-    }).addTo(map);
+    });
 		L.control.layers({
       'ESRI Topography': esri_topo,
-			'OSM': OSM_Mapnik,
-      'Empty': cloudmade,
       'ESRI Imagery': satellite,
+      'OSM': OSM_Mapnik,
+      'Empty': cloudmade,
+      
 		}).addTo(map);
 
   // Add choropleth features.
